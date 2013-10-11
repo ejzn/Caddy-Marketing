@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ejznAppDelegate.h"
+#import "CaddyAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ejznAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CaddyAppDelegate class]));
     }
 }

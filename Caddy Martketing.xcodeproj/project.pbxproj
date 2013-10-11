@@ -12,15 +12,25 @@
 		933C32A718073FDF00AE2409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A618073FDF00AE2409 /* UIKit.framework */; };
 		933C32AD18073FDF00AE2409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 933C32AB18073FDF00AE2409 /* InfoPlist.strings */; };
 		933C32AF18073FDF00AE2409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32AE18073FDF00AE2409 /* main.m */; };
-		933C32B318073FDF00AE2409 /* ejznAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32B218073FDF00AE2409 /* ejznAppDelegate.m */; };
+		933C32B318073FDF00AE2409 /* CaddyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32B218073FDF00AE2409 /* CaddyAppDelegate.m */; };
 		933C32B618073FDF00AE2409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933C32B418073FDF00AE2409 /* Main.storyboard */; };
-		933C32B918073FDF00AE2409 /* ejznViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32B818073FDF00AE2409 /* ejznViewController.m */; };
+		933C32B918073FDF00AE2409 /* HoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32B818073FDF00AE2409 /* HoleViewController.m */; };
 		933C32BB18073FDF00AE2409 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933C32BA18073FDF00AE2409 /* Images.xcassets */; };
 		933C32C218073FE000AE2409 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32C118073FE000AE2409 /* XCTest.framework */; };
 		933C32C318073FE000AE2409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A218073FDF00AE2409 /* Foundation.framework */; };
 		933C32C418073FE000AE2409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A618073FDF00AE2409 /* UIKit.framework */; };
 		933C32CC18073FE000AE2409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 933C32CA18073FE000AE2409 /* InfoPlist.strings */; };
 		933C32CE18073FE000AE2409 /* Caddy_MartketingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32CD18073FE000AE2409 /* Caddy_MartketingTests.m */; };
+		93BFFD4318079B07003707A5 /* hole_1_SPRUCE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD3E18079B07003707A5 /* hole_1_SPRUCE.mp4 */; };
+		93BFFD4418079B07003707A5 /* Hole_19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD3F18079B07003707A5 /* Hole_19.jpg */; };
+		93BFFD4518079B07003707A5 /* film_reel-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD4018079B07003707A5 /* film_reel-32.png */; };
+		93BFFD4618079B07003707A5 /* near_me-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD4118079B07003707A5 /* near_me-32.png */; };
+		93BFFD4718079B07003707A5 /* edit-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD4218079B07003707A5 /* edit-32.png */; };
+		93BFFD4B1807B480003707A5 /* map-marker-128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD491807B480003707A5 /* map-marker-128x128.png */; };
+		93BFFD4C1807B480003707A5 /* scooter-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD4A1807B480003707A5 /* scooter-50.png */; };
+		93BFFD4E1807C74D003707A5 /* MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD4D1807C74D003707A5 /* MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4 */; };
+		93E25DE41807706D0069220A /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E25DE31807706D0069220A /* ScoreViewController.m */; };
+		93E25DE7180770DD0069220A /* FlyByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E25DE6180770DD0069220A /* FlyByViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +52,29 @@
 		933C32AC18073FDF00AE2409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		933C32AE18073FDF00AE2409 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		933C32B018073FDF00AE2409 /* Caddy Martketing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Caddy Martketing-Prefix.pch"; sourceTree = "<group>"; };
-		933C32B118073FDF00AE2409 /* ejznAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ejznAppDelegate.h; sourceTree = "<group>"; };
-		933C32B218073FDF00AE2409 /* ejznAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ejznAppDelegate.m; sourceTree = "<group>"; };
+		933C32B118073FDF00AE2409 /* CaddyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaddyAppDelegate.h; sourceTree = "<group>"; };
+		933C32B218073FDF00AE2409 /* CaddyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaddyAppDelegate.m; sourceTree = "<group>"; };
 		933C32B518073FDF00AE2409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		933C32B718073FDF00AE2409 /* ejznViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ejznViewController.h; sourceTree = "<group>"; };
-		933C32B818073FDF00AE2409 /* ejznViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ejznViewController.m; sourceTree = "<group>"; };
+		933C32B718073FDF00AE2409 /* HoleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HoleViewController.h; sourceTree = "<group>"; };
+		933C32B818073FDF00AE2409 /* HoleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoleViewController.m; sourceTree = "<group>"; };
 		933C32BA18073FDF00AE2409 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		933C32C018073FE000AE2409 /* Caddy MartketingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Caddy MartketingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933C32C118073FE000AE2409 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		933C32C918073FE000AE2409 /* Caddy MartketingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caddy MartketingTests-Info.plist"; sourceTree = "<group>"; };
 		933C32CB18073FE000AE2409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		933C32CD18073FE000AE2409 /* Caddy_MartketingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caddy_MartketingTests.m; sourceTree = "<group>"; };
+		93BFFD3E18079B07003707A5 /* hole_1_SPRUCE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hole_1_SPRUCE.mp4; sourceTree = "<group>"; };
+		93BFFD3F18079B07003707A5 /* Hole_19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hole_19.jpg; sourceTree = "<group>"; };
+		93BFFD4018079B07003707A5 /* film_reel-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "film_reel-32.png"; sourceTree = "<group>"; };
+		93BFFD4118079B07003707A5 /* near_me-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near_me-32.png"; sourceTree = "<group>"; };
+		93BFFD4218079B07003707A5 /* edit-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-32.png"; sourceTree = "<group>"; };
+		93BFFD491807B480003707A5 /* map-marker-128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker-128x128.png"; sourceTree = "<group>"; };
+		93BFFD4A1807B480003707A5 /* scooter-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scooter-50.png"; sourceTree = "<group>"; };
+		93BFFD4D1807C74D003707A5 /* MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4; sourceTree = "<group>"; };
+		93E25DE21807706D0069220A /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		93E25DE31807706D0069220A /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		93E25DE5180770DD0069220A /* FlyByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyByViewController.h; sourceTree = "<group>"; };
+		93E25DE6180770DD0069220A /* FlyByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyByViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +134,18 @@
 		933C32A818073FDF00AE2409 /* Caddy Martketing */ = {
 			isa = PBXGroup;
 			children = (
-				933C32B118073FDF00AE2409 /* ejznAppDelegate.h */,
-				933C32B218073FDF00AE2409 /* ejznAppDelegate.m */,
+				93BFFD4818079B6C003707A5 /* Resources */,
+				933C32B118073FDF00AE2409 /* CaddyAppDelegate.h */,
+				933C32B218073FDF00AE2409 /* CaddyAppDelegate.m */,
 				933C32B418073FDF00AE2409 /* Main.storyboard */,
-				933C32B718073FDF00AE2409 /* ejznViewController.h */,
-				933C32B818073FDF00AE2409 /* ejznViewController.m */,
+				933C32B718073FDF00AE2409 /* HoleViewController.h */,
+				933C32B818073FDF00AE2409 /* HoleViewController.m */,
 				933C32BA18073FDF00AE2409 /* Images.xcassets */,
 				933C32A918073FDF00AE2409 /* Supporting Files */,
+				93E25DE21807706D0069220A /* ScoreViewController.h */,
+				93E25DE31807706D0069220A /* ScoreViewController.m */,
+				93E25DE5180770DD0069220A /* FlyByViewController.h */,
+				93E25DE6180770DD0069220A /* FlyByViewController.m */,
 			);
 			path = "Caddy Martketing";
 			sourceTree = "<group>";
@@ -150,6 +177,21 @@
 				933C32CA18073FE000AE2409 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93BFFD4818079B6C003707A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93BFFD4D1807C74D003707A5 /* MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4 */,
+				93BFFD491807B480003707A5 /* map-marker-128x128.png */,
+				93BFFD4A1807B480003707A5 /* scooter-50.png */,
+				93BFFD3E18079B07003707A5 /* hole_1_SPRUCE.mp4 */,
+				93BFFD3F18079B07003707A5 /* Hole_19.jpg */,
+				93BFFD4018079B07003707A5 /* film_reel-32.png */,
+				93BFFD4118079B07003707A5 /* near_me-32.png */,
+				93BFFD4218079B07003707A5 /* edit-32.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +271,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93BFFD4E1807C74D003707A5 /* MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4 in Resources */,
+				93BFFD4518079B07003707A5 /* film_reel-32.png in Resources */,
 				933C32BB18073FDF00AE2409 /* Images.xcassets in Resources */,
+				93BFFD4B1807B480003707A5 /* map-marker-128x128.png in Resources */,
+				93BFFD4318079B07003707A5 /* hole_1_SPRUCE.mp4 in Resources */,
 				933C32AD18073FDF00AE2409 /* InfoPlist.strings in Resources */,
+				93BFFD4618079B07003707A5 /* near_me-32.png in Resources */,
 				933C32B618073FDF00AE2409 /* Main.storyboard in Resources */,
+				93BFFD4718079B07003707A5 /* edit-32.png in Resources */,
+				93BFFD4C1807B480003707A5 /* scooter-50.png in Resources */,
+				93BFFD4418079B07003707A5 /* Hole_19.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E25DE7180770DD0069220A /* FlyByViewController.m in Sources */,
 				933C32AF18073FDF00AE2409 /* main.m in Sources */,
-				933C32B318073FDF00AE2409 /* ejznAppDelegate.m in Sources */,
-				933C32B918073FDF00AE2409 /* ejznViewController.m in Sources */,
+				933C32B318073FDF00AE2409 /* CaddyAppDelegate.m in Sources */,
+				933C32B918073FDF00AE2409 /* HoleViewController.m in Sources */,
+				93E25DE41807706D0069220A /* ScoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +513,7 @@
 				933C32D318073FE000AE2409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		933C32D418073FE000AE2409 /* Build configuration list for PBXNativeTarget "Caddy MartketingTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +522,7 @@
 				933C32D618073FE000AE2409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
