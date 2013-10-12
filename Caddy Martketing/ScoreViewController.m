@@ -7,6 +7,7 @@
 //
 
 #import "ScoreViewController.h"
+#import <RevMobAds/RevMobAds.h>
 
 @interface ScoreViewController ()
 
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [[RevMobAds session] showFullscreen];
 }
 
 - (void)didReceiveMemoryWarning

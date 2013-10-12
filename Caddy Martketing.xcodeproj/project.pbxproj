@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93290FE51808594500F31E3C /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93290FE41808594500F31E3C /* RevMobAds.framework */; };
+		93290FE7180859C300F31E3C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93290FE6180859C300F31E3C /* StoreKit.framework */; };
+		93290FE9180859CD00F31E3C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93290FE8180859CD00F31E3C /* AdSupport.framework */; };
+		93290FEB180859D900F31E3C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93290FEA180859D900F31E3C /* SystemConfiguration.framework */; };
 		933C32A318073FDF00AE2409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A218073FDF00AE2409 /* Foundation.framework */; };
 		933C32A518073FDF00AE2409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A418073FDF00AE2409 /* CoreGraphics.framework */; };
 		933C32A718073FDF00AE2409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A618073FDF00AE2409 /* UIKit.framework */; };
@@ -21,6 +25,7 @@
 		933C32C418073FE000AE2409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C32A618073FDF00AE2409 /* UIKit.framework */; };
 		933C32CC18073FE000AE2409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 933C32CA18073FE000AE2409 /* InfoPlist.strings */; };
 		933C32CE18073FE000AE2409 /* Caddy_MartketingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C32CD18073FE000AE2409 /* Caddy_MartketingTests.m */; };
+		9373E63718088DB1003AFBF3 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 9373E63618088DB1003AFBF3 /* flag.png */; };
 		93BFFD4318079B07003707A5 /* hole_1_SPRUCE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD3E18079B07003707A5 /* hole_1_SPRUCE.mp4 */; };
 		93BFFD4418079B07003707A5 /* Hole_19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD3F18079B07003707A5 /* Hole_19.jpg */; };
 		93BFFD4518079B07003707A5 /* film_reel-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFD4018079B07003707A5 /* film_reel-32.png */; };
@@ -44,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93290FE41808594500F31E3C /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
+		93290FE6180859C300F31E3C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		93290FE8180859CD00F31E3C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		93290FEA180859D900F31E3C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		933C329F18073FDF00AE2409 /* Caddy Martketing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caddy Martketing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933C32A218073FDF00AE2409 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		933C32A418073FDF00AE2409 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +72,7 @@
 		933C32C918073FE000AE2409 /* Caddy MartketingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caddy MartketingTests-Info.plist"; sourceTree = "<group>"; };
 		933C32CB18073FE000AE2409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		933C32CD18073FE000AE2409 /* Caddy_MartketingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caddy_MartketingTests.m; sourceTree = "<group>"; };
+		9373E63618088DB1003AFBF3 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flag.png; path = ../../../../../../Downloads/flag.png; sourceTree = "<group>"; };
 		93BFFD3E18079B07003707A5 /* hole_1_SPRUCE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hole_1_SPRUCE.mp4; sourceTree = "<group>"; };
 		93BFFD3F18079B07003707A5 /* Hole_19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hole_19.jpg; sourceTree = "<group>"; };
 		93BFFD4018079B07003707A5 /* film_reel-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "film_reel-32.png"; sourceTree = "<group>"; };
@@ -82,8 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93290FEB180859D900F31E3C /* SystemConfiguration.framework in Frameworks */,
+				93290FE9180859CD00F31E3C /* AdSupport.framework in Frameworks */,
+				93290FE7180859C300F31E3C /* StoreKit.framework in Frameworks */,
 				933C32A518073FDF00AE2409 /* CoreGraphics.framework in Frameworks */,
 				933C32A718073FDF00AE2409 /* UIKit.framework in Frameworks */,
+				93290FE51808594500F31E3C /* RevMobAds.framework in Frameworks */,
 				933C32A318073FDF00AE2409 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +137,10 @@
 		933C32A118073FDF00AE2409 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93290FEA180859D900F31E3C /* SystemConfiguration.framework */,
+				93290FE8180859CD00F31E3C /* AdSupport.framework */,
+				93290FE6180859C300F31E3C /* StoreKit.framework */,
+				93290FE41808594500F31E3C /* RevMobAds.framework */,
 				933C32A218073FDF00AE2409 /* Foundation.framework */,
 				933C32A418073FDF00AE2409 /* CoreGraphics.framework */,
 				933C32A618073FDF00AE2409 /* UIKit.framework */,
@@ -182,6 +200,7 @@
 		93BFFD4818079B6C003707A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9373E63618088DB1003AFBF3 /* flag.png */,
 				93BFFD4D1807C74D003707A5 /* MediaCoder_test3_1m10s_MPEG4SP_VBR_516kbps_320x240_25fps_MPEG1Layer3_CBR_320kbps_Stereo_44100Hz.mp4 */,
 				93BFFD491807B480003707A5 /* map-marker-128x128.png */,
 				93BFFD4A1807B480003707A5 /* scooter-50.png */,
@@ -276,6 +295,7 @@
 				933C32BB18073FDF00AE2409 /* Images.xcassets in Resources */,
 				93BFFD4B1807B480003707A5 /* map-marker-128x128.png in Resources */,
 				93BFFD4318079B07003707A5 /* hole_1_SPRUCE.mp4 in Resources */,
+				9373E63718088DB1003AFBF3 /* flag.png in Resources */,
 				933C32AD18073FDF00AE2409 /* InfoPlist.strings in Resources */,
 				93BFFD4618079B07003707A5 /* near_me-32.png in Resources */,
 				933C32B618073FDF00AE2409 /* Main.storyboard in Resources */,
@@ -429,8 +449,11 @@
 		933C32D218073FE000AE2409 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/erikj/Dropbox/Consulting/Caddy\\ Marketing/Iphone\\ Application/Caddy\\ Martketing",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Caddy Martketing/Caddy Martketing-Prefix.pch";
 				INFOPLIST_FILE = "Caddy Martketing/Caddy Martketing-Info.plist";
@@ -442,8 +465,11 @@
 		933C32D318073FE000AE2409 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/erikj/Dropbox/Consulting/Caddy\\ Marketing/Iphone\\ Application/Caddy\\ Martketing",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Caddy Martketing/Caddy Martketing-Prefix.pch";
 				INFOPLIST_FILE = "Caddy Martketing/Caddy Martketing-Info.plist";

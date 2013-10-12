@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RevMobAds/RevMobAds.h>
 
 @interface CaddyAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) RevMobAds *revMovAds;
 
 @end

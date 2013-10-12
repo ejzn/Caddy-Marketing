@@ -8,6 +8,7 @@
 
 #import "FlyByViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <RevMobAds/RevMobAds.h>
 
 @interface FlyByViewController ()
 
@@ -32,7 +33,8 @@
     {
         [super viewDidLoad];
         
-        //NSURL *movieURL = [NSURL fileURLWithPath:@"hole_1_SPRUCE.mp4"];
+        
+        [[RevMobAds session] showFullscreen];
         
         NSURL *myURL = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"hole_1_SPRUCE" ofType:@"mp4"]];
         movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:myURL];

@@ -7,12 +7,17 @@
 //
 
 #import "CaddyAppDelegate.h"
+#import <RevMobAds/RevMobAds.h>
 
 @implementation CaddyAppDelegate
 
+    @synthesize revMovAds;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    revMovAds= [RevMobAds startSessionWithAppID:@"5258212f17873cbd1f000051"];
+    [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
     return YES;
 }
 							
