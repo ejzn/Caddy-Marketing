@@ -18,7 +18,9 @@
     @property (nonatomic, strong) UIImageView *pinimageView;
     @property (nonatomic, strong) UITextView *proTip;
     @property (nonatomic, strong) UITextView *toPinView;
+    @property NSTimer *timer;
     @property BOOL proTipVisible;
+    @property float scaleFactor;
 
     /* Initial configuration from Map data, as well as
      * from GPS for cart position, and the tee and hole position
@@ -38,16 +40,18 @@
     @synthesize proTip;
     @synthesize proTipVisible;
     @synthesize toPinView;
+    @synthesize timer;
+    @synthesize scaleFactor;
 
     - (void)viewDidLoad
     {
         [super viewDidLoad];
         
+        
         /* Initialize position, this should come from GPS and map data */
         cartPosition = CGPointMake(171,330); // Random position
         teePosition = CGPointMake(181,496); // Tee position from Tee
         pinPosition = CGPointMake(160,50); // pin position from MAP
-        
         
         /* Initialize app delegate */
         CaddyAppDelegate *appDelegate = (CaddyAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -58,13 +62,17 @@
         [holeImageView setImage:image];
         [holeImageView setUserInteractionEnabled:YES];
         
+        float deviceScaling = image.size.width / holeImageView.frame.size.width;
+        scaleFactor = (deviceScaling/5.6);
+        NSLog(@"Scaling: %f", scaleFactor);
+        
         /* 2. Cart image */
         UIImage *cartImage = [UIImage imageNamed:@"map-marker-128x128.png"];
         UIImageView *cartImageView = [[UIImageView alloc] initWithImage:cartImage];
         cartImageView.frame = CGRectMake(cartPosition.x, cartPosition.y, 30, 30);
         [self.holeImageView  addSubview:cartImageView];
         
-        /* 2. Tee image */
+        /* 2. Flag image */
         UIImage *pinImage = [UIImage imageNamed:@"flag.png"];
         UIImageView *pinImageView = [[UIImageView alloc] initWithImage:pinImage];
         pinImageView.frame = CGRectMake(pinPosition.x, pinPosition.y, 30, 30);
@@ -81,12 +89,13 @@
                 NSLog(@"Ad clicked");
         }];
         
+        
     }
     - (IBAction)ProTipClicked:(id)sender {
         
         if (!proTipVisible) {
             /* Create the pro tip banner, should be read from database, or from file... */
-            NSString *messageToShow = @"This hole is a slaight curve to the right, with sand traps. The main obstacles are the trees to your left and the sloping green. Lay up on the far left by the 100yd marker for an easy shot at the pin.";
+            NSString *messageToShow = @"This hole is a slight curve to the right, with sand traps to the right of the green. Main obstacles are trees to your left, and the sloping green. Lay up on the far left of the fairway for an easier shot at par.";
             
             proTip = [[UITextView alloc] initWithFrame:CGRectMake(10,self.view.center.y - 80, 220, 200)];
             [proTip setText:messageToShow];
@@ -95,6 +104,8 @@
             [proTip setTextColor:[UIColor whiteColor]];
             [proTip setBackgroundColor:[UIColor blackColor]];
             [proTip setAlpha: 0.6f];
+            proTip.clipsToBounds = YES;
+            proTip.layer.cornerRadius = 4.0f;
             [self.view addSubview:proTip];
             proTipVisible = true;
 
@@ -138,23 +149,26 @@
              NSLog(@"X Touch: %f", touchLocation.x);
              NSLog(@"Y touch: %f", touchLocation.y);
             
+            [timer invalidate];
+            timer = nil;
+            
             [toPinView removeFromSuperview];
             
-            NSInteger toPin = abs((int) sqrt(pow(touchLocation.y - pinPosition.y, 2) + pow(touchLocation.x - pinPosition.x, 2)));
-            NSInteger fromLie = abs((int) sqrt(pow(touchLocation.y - cartPosition.y, 2) + pow(touchLocation.x - cartPosition.x, 2)));
+            NSInteger toPin = abs((int) sqrt(pow(touchLocation.y - pinPosition.y, 2) + pow(touchLocation.x - pinPosition.x, 2))* scaleFactor);
+            NSMutableString* pinDist = [NSMutableString stringWithFormat:@"FRONT: %d YDS \nCENTER: %d YDS \nBACK: %d YDS", toPin-40, toPin-25, toPin+5 ];
             
-            NSLog(@"Distance %d", toPin);
-            NSMutableString* pinDist = [NSMutableString stringWithFormat:@"Pin: %d \nLie: %d", toPin, fromLie];
-            
-            toPinView = [[UITextView alloc] initWithFrame:CGRectMake(touchLocation.x,touchLocation.y, 55, 35)];
+            toPinView = [[UITextView alloc] initWithFrame:CGRectMake(touchLocation.x,touchLocation.y, 95, 50)];
             [toPinView setText:pinDist];
-            [toPinView setFont:[UIFont systemFontOfSize:10.0]];
+            [toPinView setFont:[UIFont systemFontOfSize:9.5]];
             [toPinView setTextColor:[UIColor whiteColor]];
             [toPinView setBackgroundColor:[UIColor blackColor]];
             [toPinView setAlpha: 0.6f];
+            [toPinView setEditable:FALSE];
+            toPinView.clipsToBounds = YES;
+            toPinView.layer.cornerRadius = 4.0f;
             [self.view addSubview:toPinView];
             
-            [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(hideLabel) userInfo:nil repeats:NO];
+            timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(hideLabel) userInfo:nil repeats:NO];
             
         }
 

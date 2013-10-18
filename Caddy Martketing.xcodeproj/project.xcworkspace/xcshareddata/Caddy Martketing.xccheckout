@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>376FA3E9-9FB7-4102-8441-E72AFDAF7651</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Caddy Martketing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0F465A24-D5F0-4CB8-BCAE-62501700C7AC</key>
+		<string>https://github.com/ejzn/Caddy-Marketing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Caddy Martketing.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0F465A24-D5F0-4CB8-BCAE-62501700C7AC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ejzn/Caddy-Marketing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0F465A24-D5F0-4CB8-BCAE-62501700C7AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0F465A24-D5F0-4CB8-BCAE-62501700C7AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Caddy Martketing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
